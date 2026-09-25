@@ -4,6 +4,10 @@
   --green-dark: #173d2b;
   --green-light: #2e6b4d;
   --sage: #a8bdb3;
+  /* Золото: светлое — на зелёном фоне, тёмное — для текста на белом */
+  --gold: #c9a45c;
+  --gold-light: #dcbd7e;
+  --gold-dark: #9a7632;
   --text: #1c2621;
   --muted: #5f6b65;
   --bg: #ffffff;
@@ -56,12 +60,12 @@ p { margin: 0 0 1em; }
 }
 .btn--primary { background: var(--green); color: #fff; }
 .btn--primary:hover { background: var(--green-light); }
-.hero .btn--primary { background: #fff; color: var(--green); }
-.hero .btn--primary:hover { background: #e6efe9; }
+.hero .btn--primary { background: var(--gold); color: var(--green-dark); }
+.hero .btn--primary:hover { background: var(--gold-light); }
 .btn--ghost { border-color: rgba(255,255,255,.5); color: #fff; }
 .btn--ghost:hover { border-color: #fff; background: rgba(255,255,255,.08); }
-.btn--light { background: #fff; color: var(--green); }
-.btn--light:hover { background: #e6efe9; }
+.btn--light { background: var(--gold); color: var(--green-dark); }
+.btn--light:hover { background: var(--gold-light); }
 .btn--outline-light { border-color: rgba(255,255,255,.6); color: #fff; }
 .btn--outline-light:hover { border-color: #fff; }
 
@@ -86,7 +90,7 @@ p { margin: 0 0 1em; }
 .header__tagline { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .nav { display: flex; gap: 28px; margin-left: auto; }
 .nav a { text-decoration: none; color: var(--text); font-size: 15px; font-weight: 500; }
-.nav a:hover { color: var(--green-light); }
+.nav a:hover { color: var(--gold-dark); }
 .header__phone { font-weight: 700; text-decoration: none; white-space: nowrap; }
 .nav-toggle, .nav-burger { display: none; }
 
@@ -104,7 +108,7 @@ p { margin: 0 0 1em; }
   letter-spacing: .12em;
   font-size: 13px;
   font-weight: 600;
-  color: var(--sage);
+  color: var(--gold);
   margin-bottom: 16px;
 }
 .hero__lead { font-size: clamp(17px, 2vw, 20px); max-width: 680px; margin-bottom: 36px; }
@@ -113,6 +117,7 @@ p { margin: 0 0 1em; }
 /* ---------- Факты ---------- */
 .facts { margin-top: -48px; }
 .facts__grid {
+  border-top: 3px solid var(--gold);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
@@ -150,9 +155,9 @@ p { margin: 0 0 1em; }
   padding: 28px;
   transition: border-color .2s, box-shadow .2s;
 }
-.card:hover { border-color: var(--green); box-shadow: 0 8px 24px rgba(23, 61, 43, .08); }
+.card:hover { border-color: var(--gold); box-shadow: 0 8px 24px rgba(23, 61, 43, .08); }
 .card p { color: var(--muted); font-size: 15.5px; margin: 0; }
-.card__num { display: block; font-weight: 700; color: var(--green); margin-bottom: 14px; font-size: 14px; letter-spacing: .08em; }
+.card__num { display: block; font-weight: 700; color: var(--gold-dark); margin-bottom: 14px; font-size: 14px; letter-spacing: .08em; }
 .card--cta {
   background: var(--green);
   border-color: var(--green);
@@ -162,7 +167,7 @@ p { margin: 0 0 1em; }
 }
 .card--cta h3 { color: #fff; }
 .card--cta p { color: #c5d6cd; }
-.card__link { margin-top: auto; padding-top: 18px; color: #fff; font-weight: 600; }
+.card__link { margin-top: auto; padding-top: 18px; color: var(--gold); font-weight: 600; }
 
 /* ---------- О компании ---------- */
 .about {
@@ -186,8 +191,8 @@ p { margin: 0 0 1em; }
   top: 21px;
   width: 14px;
   height: 8px;
-  border-left: 3px solid var(--green);
-  border-bottom: 3px solid var(--green);
+  border-left: 3px solid var(--gold);
+  border-bottom: 3px solid var(--gold);
   transform: rotate(-45deg);
 }
 
@@ -201,7 +206,7 @@ p { margin: 0 0 1em; }
   gap: 16px;
 }
 .clients li {
-  border-top: 3px solid var(--green);
+  border-top: 3px solid var(--gold);
   background: var(--bg-alt);
   border-radius: 0 0 var(--radius) var(--radius);
   padding: 22px 20px;
@@ -253,7 +258,7 @@ p { margin: 0 0 1em; }
 .requisites p:last-child { margin: 0; }
 
 /* ---------- Подвал ---------- */
-.footer { background: var(--green-dark); color: #9fb6aa; font-size: 14px; padding: 24px 0; }
+.footer { background: var(--green-dark); color: #9fb6aa; font-size: 14px; padding: 24px 0; border-top: 3px solid var(--gold); }
 .footer__inner { display: flex; justify-content: space-between; align-items: center; gap: 16px 32px; flex-wrap: wrap; }
 .footer__logo { height: 64px; width: auto; }
 
