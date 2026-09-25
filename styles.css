@@ -330,3 +330,17 @@ p { margin: 0 0 1em; }
   .clients { grid-template-columns: 1fr; }
   .contacts__list dd { font-size: 17px; }
 }
+
+/* ---------- Ссылка на политику в подвале ---------- */
+.footer__link { color: #9fb6aa; }
+.footer__link:hover { color: var(--gold); }
+
+/* ---------- Страница политики ---------- */
+.policy { padding: 64px 0 88px; }
+.policy .container { max-width: 820px; }
+.policy h1 { color: var(--green); font-size: clamp(26px, 4vw, 38px); }
+.policy h2 { font-size: 21px; margin-top: 36px; }
+.policy ul { padding-left: 22px; margin: 0 0 1em; }
+.policy li { margin-bottom: 6px; }
+.policy__meta { color: var(--muted); font-size: 15px; }
+.policy__back { display: inline-block; margin-top: 32px; }
