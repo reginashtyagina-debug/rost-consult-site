@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="48" viewBox="0 0 240 48" role="img" aria-label="РОСТ-Консалт">
-  <!-- Временная заглушка. Заменить на rostkonsalt_logo.png -->
-  <rect x="0" y="4" width="40" height="40" rx="6" fill="#1d2d4f"/>
-  <path d="M9 34 L17 24 L23 29 L32 15" fill="none" stroke="#c89b5a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M26 15 H32 V21" fill="none" stroke="#c89b5a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="50" y="26" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2d4f" letter-spacing=".5">РОСТ-Консалт</text>
-  <text x="50" y="41" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#6b7280" letter-spacing=".6">Судебная экспертиза · Оценка</text>
-</svg>
