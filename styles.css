@@ -344,3 +344,18 @@ p { margin: 0 0 1em; }
 .policy li { margin-bottom: 6px; }
 .policy__meta { color: var(--muted); font-size: 15px; }
 .policy__back { display: inline-block; margin-top: 32px; }
+
+/* ---------- Регионы (О компании) ---------- */
+.regions { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+.regions__title { font-size: 17px; margin-bottom: 14px; }
+.regions__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.regions__list li {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--green);
+}
